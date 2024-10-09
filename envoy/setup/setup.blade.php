@@ -1,7 +1,6 @@
 {{-- Setup File Example --}}
-
 @setup
-    $repository = 'git@gitlab.example.com:<USERNAME>/laravel-sample.git';
+    $repository = 'https://github.com/mrkindy/envoy-example.git';
     $branch = 'main';
     $releases_dir = '/var/www/app/releases';
     $app_dir = '/var/www/app';
