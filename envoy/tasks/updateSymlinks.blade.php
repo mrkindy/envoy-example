@@ -8,5 +8,8 @@
     ln -nfs {{ $app_dir }}/.env {{ $new_release_dir }}/.env
 
     echo 'Linking current release'
-    ln -nfs {{ $new_release_dir }} {{ $app_dir }}/current
+    ln -nfs {{ $new_release_dir }} {{ $app_dir }}/html
+
+    echo 'Linking storage/app/public to public/storage'
+    ln -nfs {{ $app_dir }}/storage/app/public {{ $new_release_dir }}/public/storage
 @endtask
