@@ -1,3 +1,3 @@
 @success
-    echo "Success to deploy the application.";
+    @slack($slack_webhook, '#deploy', "Success to deploy the application.")
 @endsuccess
