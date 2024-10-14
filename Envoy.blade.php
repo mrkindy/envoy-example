@@ -8,8 +8,8 @@
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 
-    $slack_webhook = getenv('SLACK_WEBHOOK');
-    $repository = getenv('REPOSITORY');
+    $slack_webhook = $_ENV['SLACK_WEBHOOK'];
+    $repository = $_ENV['REPOSITORY'];
     $branch = 'main';
     $releases_dir = '/var/www/releases';
     $app_dir = '/var/www';
